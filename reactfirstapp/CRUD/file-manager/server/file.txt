@@ -1,0 +1,5 @@
+Hello! This is the initial content of file.txt
+Welcome to the File Manager App by Lovepreet Kaur!
+You can Create, Read, Update, and Delete this content.
+React First CRUD app
+vansh malik
