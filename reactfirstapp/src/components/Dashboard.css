@@ -1,0 +1,130 @@
+.dashboard-page {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(32px, 7vw, 88px) clamp(20px, 5vw, 64px);
+  box-sizing: border-box;
+}
+
+.dashboard-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+  align-items: end;
+  gap: 48px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #d7cbbb;
+}
+
+.dashboard-kicker {
+  margin-top: 0;
+}
+
+.dashboard-hero h1 {
+  max-width: 9ch;
+  margin: 0;
+  color: #29231f;
+  font-family: Georgia, serif;
+  font-size: clamp(3.3rem, 8vw, 7rem);
+  line-height: 0.9;
+}
+
+.dashboard-intro {
+  max-width: 48ch;
+  margin-top: 26px;
+  color: #75685c;
+}
+
+.primary-action {
+  display: inline-block;
+  margin-top: 28px;
+}
+
+.dashboard-hero .live-clock {
+  margin: 0;
+  padding: 18px 0;
+  border-top: 1px solid #d7cbbb;
+  border-bottom: 1px solid #d7cbbb;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr 1fr;
+  gap: 16px;
+  padding-top: 24px;
+}
+
+.dashboard-card {
+  min-height: 220px;
+  padding: 24px;
+  border: 1px solid #d7cbbb;
+  border-radius: 6px;
+  background: #fffdf9;
+}
+
+.featured-card {
+  color: #fffdf9;
+  background: #29231f;
+}
+
+.card-index {
+  display: block;
+  margin-bottom: 52px;
+  color: #b24c2f;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.featured-card .card-index {
+  color: #e1a38c;
+}
+
+.dashboard-card h2 {
+  margin-bottom: 12px;
+  color: inherit;
+  font-family: Georgia, serif;
+  font-size: 1.65rem;
+}
+
+.dashboard-card p {
+  color: #75685c;
+}
+
+.featured-card p {
+  color: #d7cbbb;
+}
+
+.dashboard-card strong {
+  display: block;
+  margin-top: 8px;
+  color: #29231f;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-card button {
+  margin-top: 24px;
+  padding: 0;
+  border: 0;
+  color: #e1a38c;
+  background: transparent;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dashboard-card button:hover {
+  color: #fffdf9;
+}
+
+@media (max-width: 800px) {
+  .dashboard-hero,
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-hero {
+    gap: 36px;
+  }
+
+  .dashboard-card {
+    min-height: auto;
+  }
+}

@@ -1,0 +1,89 @@
+.site-navigation {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 18px clamp(20px, 5vw, 64px);
+  border-bottom: 1px solid #d7cbbb;
+  background: #fffdf9;
+}
+
+.brand-button,
+.nav-link,
+.logout-button {
+  border: 0;
+  color: #75685c;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.brand-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #29231f;
+  font-weight: 700;
+}
+
+.brand-symbol {
+  width: 28px;
+  height: 28px;
+  font-size: 0.62rem;
+}
+
+.site-navigation nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  border-color: #b24c2f;
+  color: #29231f;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+
+.nav-user-name {
+  color: #29231f;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.logout-button {
+  padding: 7px 10px;
+  border: 1px solid #d7cbbb;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.logout-button:hover {
+  border-color: #b24c2f;
+  color: #b24c2f;
+}
+
+@media (max-width: 640px) {
+  .site-navigation {
+    flex-wrap: wrap;
+    gap: 14px 20px;
+  }
+
+  .site-navigation nav {
+    order: 3;
+    width: 100%;
+  }
+
+  .nav-user {
+    margin-left: auto;
+  }
+}
